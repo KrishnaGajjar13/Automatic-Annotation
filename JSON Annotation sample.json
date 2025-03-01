@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "file_name": "image_001.jpg",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [864, 341.5, 180, 663],
+      "area": 45000
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thermos_Bottle"
+    }
+  ]
+}
