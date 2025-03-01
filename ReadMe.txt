@@ -30,22 +30,22 @@ The size of the cart will be less than 70-80 cm so there is no need to take imag
 Now the classification of the sizes there will be 3 categories of objects based on size, height less than 10 cm will be captured at (20, 60), height less than 20 cm will be captured at (40, 75), and objects with height up to 30 cm can be added for detection images will be captured at (50,85). W.R.T. to Spherical object for each class of object radius should be half of height so for small radius should be < 5 cm, 10 cm, and 15 cm.
 
 Bottom padding
-20 cm - 25-pixel padding 
+20 cm - 35-pixel padding
 -> Center of object at center will be at (960,1055) + or - 1/2 * (Breadth/width) for cuboid. For cylindrical or spherical objects (960,1055) + or - (Radius of object).
 
-40 cm - 115-pixel padding 
+40 cm - 60-pixel padding
 -> Center of object at center will be at (960,965) + or - 1/2 * (Breadth/width) for cuboid. For cylindrical or spherical objects, (960,965) + or - (Radius of object).
 
-50 cm - 190-pixel padding 
+50 cm - 70-pixel padding
 -> Center of object at center will be at (960,890) + or - 1/2 * (Breadth/width) for cuboid. For a cylindrical or spherical object (960,890) + or - (Radius of the object).
 
-60 cm - 
+60 cm - 85-pixel padding
 -> The center of the object at the center will be at (960,) + or - 1/2 * (Breadth/width) for the cuboid. For cylindrical or spherical object (960,) + or - (Radius of the object).
 
-75 cm -
+75 cm - 100-pixel padding
 -> The center of the object at the center will be at (960,) + or - 1/2 * (Breadth/width) for the cuboid. For cylindrical or spherical object (960,) + or - (Radius of the object).
 
-85 cm -
+85 cm - 100-pixel padding
 -> The center of the object at the center will be at (960,) + or - 1/2 * (Breadth/width) for the cuboid. For cylindrical or spherical object (960,) + or - (Radius of the object).
 
 Equation for focal_length_pixel is diagonal = (width^2+height^2)^0.5 
