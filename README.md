@@ -56,6 +56,34 @@ python aug.py
 - **Blur** (various types)
 - **Vertical & Horizontal Flips**
 - **Recommended Upscale Ratio**: `1:1` (default is `2:1`, adjust as needed)
+- **Default image size transformation**: `300x300` (Change if needed)
+
+## Camera & FOV Considerations
+- This project is tested with the **Logitech C525 webcam**, which has:
+  - **Resolution**: `1920x1080`
+  - **Diagonal Field of View (FOV)**: `69°`
+  - **Webcam Angle**: `102°`
+- If using a different camera, ensure you know its **FOV and resolution**.
+- Most built-in laptop cameras will default to **1080p** resolution.
+
+## Estimating Focal Length in Pixels
+To estimate `focal_length_pixel`, you need to know the **FOV and resolution** of your camera.
+
+### Formula:
+1. Compute **diagonal resolution**:
+   ```
+   diagonal = sqrt(width² + height²)
+   ```
+2. Compute **focal length in pixels**:
+   ```
+   focal_length_pixel = diagonal / (2 * tan(FOV/2))
+   ```
+   (Make sure `FOV` is in **radians**)
+
+Example for `1000x1000` resolution:
+```
+focal_length_pixel = 1414.21
+```
 
 ## Notes
 - **Captured images** are stored in `LabelImages/`
@@ -72,4 +100,3 @@ Contributions are welcome! Feel free to submit **issues** or **pull requests**.
 ---
 
 🚀 Happy Annotating!
-
