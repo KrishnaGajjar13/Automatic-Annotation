@@ -1,0 +1,11 @@
+torch
+albumentations
+albumentations[pytorch]
+numpy
+pandas
+tqdm
+opencv-python
+Pillow
+pathlib
+logging
+concurrent.futures
